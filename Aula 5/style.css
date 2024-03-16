@@ -1,44 +1,139 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
 
-body{
+body {
     background-color: rgb(192, 131, 250);
     width: 100vw;
     height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section{
+section {
     display: flex;
     width: 80%;
     height: 80%;
 }
 
-.container-esquerda{
+.conteiner-esquerda {
     background-color: rgb(241, 219, 180);
     width: 50%;
     height: 100%;
+    /* ALINHAR AO CENTRO */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-img{
+img {
     width: 80%;
 }
 
-.container-direita{
+.conteiner-direita {
     background-color: #fff;
     width: 50%;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
+    padding: 30px;
+}
+
+.flex {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 15px 30px; */
+}
+
+/* .flex input{
+    padding-left: 10px;
+} */
+
+button{
+    background-color: rgb(91, 82, 212);
+    color: white;
+    border-radius: 3px;
+    padding: 5px;
+    border: none;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs label{
+    font-weight: bold;
+    font-size: 12px;
+    padding: 5px 0;
+}
+
+.inputs input{
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 6px gray;
+    height: 30px;
+    width: 200px;
+}
+
+.inputs input::placeholder{
+    padding-left: 10px;
+}
+
+.inputs input:hover{
+    border: none;
+    box-shadow: 5px 5px 6px rgb(151, 82, 212);
+}
+
+.inputs input:focus{
+    outline: 1.5px solid rgb(153, 82, 215);
+}
+
+.container-genero{
+    width: 100%;
+}
+
+.container-genero h2{
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.container-genero div div label{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.continuar{
+    width: 100%;
+    height: 30px; /* A */
+}
+
+section{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.298);
+}
+
+h1{
+    position: relative;
+}
+
+h1::after{
+    content: "";
+    background-color: rgb(176, 122, 224);
+    height: 5px;
+    width: 71px;
+    margin: 0;
+    position: absolute;
+    border-radius: 10px;
+    border: none;
+    left: 9.5px;
+    top: 30px;
 }
