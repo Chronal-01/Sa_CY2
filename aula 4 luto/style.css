@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Libre+Baskerville&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+
+}
+
+body{
+    background-color: black;
+    color: white;
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+
+     width: 100vw;
+     height: 100vh;
+}
+
+div.conteiner-esquerda{
+width: 40%;
+height: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+div.conteiner-direita{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.imagem img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
+
+
+}
+
+.titulo h1{
+    margin: 5px;
+    font-size: 50px;
+}
+
+.paragrafos p{
+    font-size: 18px;
+    margin: 10px;
+    text-align: justify;
+}
