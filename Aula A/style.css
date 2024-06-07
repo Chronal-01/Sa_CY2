@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(45deg, #39f3f7 22%, #B721FF 87%);
+    color: whitesmoke;
+}
+
+.conteiner-gerador-senha {
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 4px 4px 8px black;
+}
+
+.senha {
+    background-color: #6b20cd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    height: 30px;
+}
+
+.senha span {
+    padding-left: 10px;
+}
+
+.senha button {
+    padding-right: 10px;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.senha:hover button {
+    opacity: 1;
+    transform: translate(0, 0%);
+}
+
+.body-gerador-senha {
+    padding-top: 20px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#tamanho {
+    width: 38px;
+    text-align: center;
+}
+
+label {
+    font-size: 14px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+input {
+    cursor: pointer;
+    background-color: #6b20cd;
+    border: none;
+    border-radius: 2px;
+    font-weight: bold;
+    color: white;
+}
+
+input[type="checkbox"] {
+    accent-color: #6b20cd;
+}
+
+.conteiner-botoes {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.conteiner-botoes button {
+    width: 100%;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.submit {
+    background: #2cc3c6;
+}
+
+.reset {
+    background-color: #6b28cd;
+}
